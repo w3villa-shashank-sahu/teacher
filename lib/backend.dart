@@ -31,7 +31,7 @@ Future<List<Product>> fetchProducts() async {
   return [
     Product(
       id: '1',
-      name: 'Product 1',
+      name: 'Samosa',
       price: 10.0,
       imageUrl: defaultProductImage,
       stockQuantity: 100,
@@ -39,11 +39,27 @@ Future<List<Product>> fetchProducts() async {
     ),
     Product(
       id: '2',
-      name: 'Product 2',
+      name: 'Book',
       price: 20.0,
       imageUrl: defaultProductImage,
       stockQuantity: 50,
-      category: 'Clothing',
+      category: 'Stationary',
+    ),
+    Product(
+      id: '3',
+      name: 'Pen',
+      price: 5.0,
+      imageUrl: defaultProductImage,
+      stockQuantity: 50,
+      category: 'Stationary',
+    ),
+    Product(
+      id: '3',
+      name: 'Maggie',
+      price: 30.0,
+      imageUrl: defaultProductImage,
+      stockQuantity: 50,
+      category: 'Snack',
     ),
   ];
 
@@ -59,6 +75,7 @@ Future<List<Product>> fetchProducts() async {
 
 // Add Alloted Product to the the student
 Future<void> allotProduct(List<Product> product, List<int> quantity) async {
+  return;
   // Create a list of maps where each map contains product ID and quantity
   final List<Map<String, dynamic>> allotmentData = List.generate(
     product.length,

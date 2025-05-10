@@ -400,6 +400,7 @@ class _ProductAllotmentState extends State<ProductAllotment> {
         if (!mounted) return;
         // Close loading indicator
         Navigator.of(context).pop(); // Show success message
+        Navigator.of(context).pop();
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Row(
